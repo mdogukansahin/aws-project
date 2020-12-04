@@ -1,0 +1,908 @@
+{
+  "version": "7.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "ApiLambdaCrudDynamoDBExample": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "ApiLambdaCrudDynamoDBExample.template.json"
+      },
+      "metadata": {
+        "/ApiLambdaCrudDynamoDBExample": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.832cf1e0ef8bb68d36c23ab73819c673b61642b327e462e790a88210580c78de",
+              "id": "832cf1e0ef8bb68d36c23ab73819c673b61642b327e462e790a88210580c78de",
+              "packaging": "zip",
+              "sourceHash": "832cf1e0ef8bb68d36c23ab73819c673b61642b327e462e790a88210580c78de",
+              "s3BucketParameter": "AssetParameters832cf1e0ef8bb68d36c23ab73819c673b61642b327e462e790a88210580c78deS3Bucket710890D2",
+              "s3KeyParameter": "AssetParameters832cf1e0ef8bb68d36c23ab73819c673b61642b327e462e790a88210580c78deS3VersionKeyBB811C95",
+              "artifactHashParameter": "AssetParameters832cf1e0ef8bb68d36c23ab73819c673b61642b327e462e790a88210580c78deArtifactHash75C65358"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/construct-compat.js:358:62)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:157:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:75:25)",
+              "ApiLambdaCrudDynamoDBStack.addFileAsset (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/stack.js:363:33)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:79:31)",
+              "new Asset (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:41:44)",
+              "AssetCode.bind (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-lambda/lib/code.js:196:26)",
+              "new Function (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-lambda/lib/function.js:87:33)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:21:30)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/todos": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "todos19732BDC"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/construct-compat.js:358:62)",
+              "new Table (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:426:23)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:10:29)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/todos/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "todos19732BDC",
+            "trace": [
+              "new Table (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:401:22)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:10:29)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/getOneItemFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getOneItemFunctionServiceRoleCFD54796",
+            "trace": [
+              "new Role (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-iam/lib/role.js:62:22)",
+              "new Function (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-lambda/lib/function.js:69:35)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:21:30)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/getOneItemFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getOneItemFunctionServiceRoleDefaultPolicy6B743AA8",
+            "trace": [
+              "new Policy (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-iam/lib/policy.js:49:26)",
+              "Role.addToPrincipalPolicy (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-iam/lib/role.js:193:34)",
+              "Function.addToPrincipal (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-iam/lib/grant.js:82:65)",
+              "Table.combinedGrant (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:338:35)",
+              "Table.grantReadWriteData (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:156:21)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:58:21)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/getOneItemFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getOneItemFunctionE3257B22",
+            "trace": [
+              "new Function (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-lambda/lib/function.js:119:26)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:21:30)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/AssetParameters/832cf1e0ef8bb68d36c23ab73819c673b61642b327e462e790a88210580c78de/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters832cf1e0ef8bb68d36c23ab73819c673b61642b327e462e790a88210580c78deS3Bucket710890D2",
+            "trace": [
+              "new FileAssetParameters (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:12:36)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:147:22)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:75:25)",
+              "ApiLambdaCrudDynamoDBStack.addFileAsset (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/stack.js:363:33)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:79:31)",
+              "new Asset (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:41:44)",
+              "AssetCode.bind (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-lambda/lib/code.js:196:26)",
+              "new Function (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-lambda/lib/function.js:87:33)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:21:30)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/AssetParameters/832cf1e0ef8bb68d36c23ab73819c673b61642b327e462e790a88210580c78de/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters832cf1e0ef8bb68d36c23ab73819c673b61642b327e462e790a88210580c78deS3VersionKeyBB811C95",
+            "trace": [
+              "new FileAssetParameters (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:16:35)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:147:22)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:75:25)",
+              "ApiLambdaCrudDynamoDBStack.addFileAsset (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/stack.js:363:33)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:79:31)",
+              "new Asset (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:41:44)",
+              "AssetCode.bind (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-lambda/lib/code.js:196:26)",
+              "new Function (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-lambda/lib/function.js:87:33)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:21:30)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/AssetParameters/832cf1e0ef8bb68d36c23ab73819c673b61642b327e462e790a88210580c78de/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters832cf1e0ef8bb68d36c23ab73819c673b61642b327e462e790a88210580c78deArtifactHash75C65358",
+            "trace": [
+              "new FileAssetParameters (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:20:38)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:147:22)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:75:25)",
+              "ApiLambdaCrudDynamoDBStack.addFileAsset (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/stack.js:363:33)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:79:31)",
+              "new Asset (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:41:44)",
+              "AssetCode.bind (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-lambda/lib/code.js:196:26)",
+              "new Function (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-lambda/lib/function.js:87:33)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:21:30)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/getAllItemsFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getAllItemsFunctionServiceRoleCC084440",
+            "trace": [
+              "new Role (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-iam/lib/role.js:62:22)",
+              "new Function (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-lambda/lib/function.js:69:35)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:30:30)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/getAllItemsFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getAllItemsFunctionServiceRoleDefaultPolicyF069C759",
+            "trace": [
+              "new Policy (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-iam/lib/policy.js:49:26)",
+              "Role.addToPrincipalPolicy (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-iam/lib/role.js:193:34)",
+              "Function.addToPrincipal (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-iam/lib/grant.js:82:65)",
+              "Table.combinedGrant (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:338:35)",
+              "Table.grantReadWriteData (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:156:21)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:57:21)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/getAllItemsFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getAllItemsFunction0B7A913E",
+            "trace": [
+              "new Function (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-lambda/lib/function.js:119:26)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:30:30)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/updateItemFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "updateItemFunctionServiceRole40035396",
+            "trace": [
+              "new Role (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-iam/lib/role.js:62:22)",
+              "new Function (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-lambda/lib/function.js:69:35)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:39:27)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/updateItemFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "updateItemFunctionServiceRoleDefaultPolicy6A793729",
+            "trace": [
+              "new Policy (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-iam/lib/policy.js:49:26)",
+              "Role.addToPrincipalPolicy (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-iam/lib/role.js:193:34)",
+              "Function.addToPrincipal (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-iam/lib/grant.js:82:65)",
+              "Table.combinedGrant (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:338:35)",
+              "Table.grantReadWriteData (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:156:21)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:59:21)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/updateItemFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "updateItemFunction59415205",
+            "trace": [
+              "new Function (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-lambda/lib/function.js:119:26)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:39:27)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/deleteItemFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "deleteItemFunctionServiceRole5C201FCC",
+            "trace": [
+              "new Role (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-iam/lib/role.js:62:22)",
+              "new Function (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-lambda/lib/function.js:69:35)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:48:27)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/deleteItemFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "deleteItemFunctionServiceRoleDefaultPolicyDCE46F14",
+            "trace": [
+              "new Policy (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-iam/lib/policy.js:49:26)",
+              "Role.addToPrincipalPolicy (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-iam/lib/role.js:193:34)",
+              "Function.addToPrincipal (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-iam/lib/grant.js:82:65)",
+              "Table.combinedGrant (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:338:35)",
+              "Table.grantReadWriteData (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:156:21)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:60:21)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/deleteItemFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "deleteItemFunction2918B1B0",
+            "trace": [
+              "new Function (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-lambda/lib/function.js:119:26)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:48:27)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/todosApi/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "todosApiD95A1E88",
+            "trace": [
+              "new RestApi (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:333:26)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:61:21)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/todosApi/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "todosApiCloudWatchRole9D5A72D0",
+            "trace": [
+              "new Role (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-iam/lib/role.js:62:22)",
+              "RestApi.configureCloudWatchRole (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:211:22)",
+              "new RestApi (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:349:18)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:61:21)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/todosApi/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "todosApiAccount301E931E",
+            "trace": [
+              "RestApi.configureCloudWatchRole (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:215:26)",
+              "new RestApi (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:349:18)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:61:21)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/todosApi/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "todosApiDeployment807AA7811295698fc3378f4de65760acb0e3831a",
+            "trace": [
+              "new Deployment (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/deployment.js:44:25)",
+              "RestApi.configureDeployment (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:226:38)",
+              "new RestApi (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:351:14)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:61:21)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/todosApi/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "todosApiDeploymentStageprod8AB5460A",
+            "trace": [
+              "new Stage (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/stage.js:59:26)",
+              "RestApi.configureDeployment (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:234:36)",
+              "new RestApi (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:351:14)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:61:21)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/todosApi/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "todosApiEndpoint6153A9B7",
+            "trace": [
+              "RestApi.configureDeployment (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:238:13)",
+              "new RestApi (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:351:14)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:61:21)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/todosApi/Default/todos/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "todosApitodos825C1164",
+            "trace": [
+              "new Resource (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:214:26)",
+              "RootResource.addResource (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:24:16)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:64:32)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/todosApi/Default/todos/GET/ApiPermission.ApiLambdaCrudDynamoDBExampletodosApi0C886C39.GET..todos": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "todosApitodosGETApiPermissionApiLambdaCrudDynamoDBExampletodosApi0C886C39GETtodos569DC330",
+            "trace": [
+              "Function.addPermission (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:37:9)",
+              "LambdaIntegration.bind (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:38:22)",
+              "new Method (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/method.js:39:40)",
+              "Resource.addMethod (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:30:16)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:66:15)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/todosApi/Default/todos/GET/ApiPermission.Test.ApiLambdaCrudDynamoDBExampletodosApi0C886C39.GET..todos": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "todosApitodosGETApiPermissionTestApiLambdaCrudDynamoDBExampletodosApi0C886C39GETtodosFDB2EB51",
+            "trace": [
+              "Function.addPermission (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:37:9)",
+              "LambdaIntegration.bind (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:45:26)",
+              "new Method (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/method.js:39:40)",
+              "Resource.addMethod (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:30:16)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:66:15)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/todosApi/Default/todos/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "todosApitodosGETC56889CF",
+            "trace": [
+              "new Method (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/method.js:55:26)",
+              "Resource.addMethod (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:30:16)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:66:15)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/todosApi/Default/todos/{id}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "todosApitodosidE9488510",
+            "trace": [
+              "new Resource (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:214:26)",
+              "Resource.addResource (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:24:16)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:67:34)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/todosApi/Default/todos/{id}/GET/ApiPermission.ApiLambdaCrudDynamoDBExampletodosApi0C886C39.GET..todos.{id}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "todosApitodosidGETApiPermissionApiLambdaCrudDynamoDBExampletodosApi0C886C39GETtodosid1A56F0DC",
+            "trace": [
+              "Function.addPermission (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:37:9)",
+              "LambdaIntegration.bind (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:38:22)",
+              "new Method (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/method.js:39:40)",
+              "Resource.addMethod (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:30:16)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:69:20)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/todosApi/Default/todos/{id}/GET/ApiPermission.Test.ApiLambdaCrudDynamoDBExampletodosApi0C886C39.GET..todos.{id}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "todosApitodosidGETApiPermissionTestApiLambdaCrudDynamoDBExampletodosApi0C886C39GETtodosidA0360631",
+            "trace": [
+              "Function.addPermission (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:37:9)",
+              "LambdaIntegration.bind (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:45:26)",
+              "new Method (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/method.js:39:40)",
+              "Resource.addMethod (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:30:16)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:69:20)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/todosApi/Default/todos/{id}/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "todosApitodosidGETEE80002A",
+            "trace": [
+              "new Method (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/method.js:55:26)",
+              "Resource.addMethod (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:30:16)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:69:20)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/todosApi/Default/todos/{id}/DELETE/ApiPermission.ApiLambdaCrudDynamoDBExampletodosApi0C886C39.DELETE..todos.{id}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "todosApitodosidDELETEApiPermissionApiLambdaCrudDynamoDBExampletodosApi0C886C39DELETEtodosidDA8CED1A",
+            "trace": [
+              "Function.addPermission (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:37:9)",
+              "LambdaIntegration.bind (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:38:22)",
+              "new Method (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/method.js:39:40)",
+              "Resource.addMethod (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:30:16)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:73:20)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/todosApi/Default/todos/{id}/DELETE/ApiPermission.Test.ApiLambdaCrudDynamoDBExampletodosApi0C886C39.DELETE..todos.{id}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "todosApitodosidDELETEApiPermissionTestApiLambdaCrudDynamoDBExampletodosApi0C886C39DELETEtodosid99AF2EFC",
+            "trace": [
+              "Function.addPermission (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:37:9)",
+              "LambdaIntegration.bind (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:45:26)",
+              "new Method (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/method.js:39:40)",
+              "Resource.addMethod (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:30:16)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:73:20)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/todosApi/Default/todos/{id}/DELETE/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "todosApitodosidDELETEC2F428C4",
+            "trace": [
+              "new Method (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/method.js:55:26)",
+              "Resource.addMethod (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:30:16)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:73:20)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/todosApi/Default/todos/{id}/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "todosApitodosidOPTIONS10D92B84",
+            "trace": [
+              "new Method (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/method.js:55:26)",
+              "Resource.addMethod (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:30:16)",
+              "addCorsOptions (/Users/senem/Desktop/dogu/aws/project/index.js:79:17)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:74:9)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/todosApi/Default/todos/PUT/ApiPermission.ApiLambdaCrudDynamoDBExampletodosApi0C886C39.PUT..todos": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "todosApitodosPUTApiPermissionApiLambdaCrudDynamoDBExampletodosApi0C886C39PUTtodosF09FCB02",
+            "trace": [
+              "Function.addPermission (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:37:9)",
+              "LambdaIntegration.bind (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:38:22)",
+              "new Method (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/method.js:39:40)",
+              "Resource.addMethod (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:30:16)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:71:15)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/todosApi/Default/todos/PUT/ApiPermission.Test.ApiLambdaCrudDynamoDBExampletodosApi0C886C39.PUT..todos": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "todosApitodosPUTApiPermissionTestApiLambdaCrudDynamoDBExampletodosApi0C886C39PUTtodosF97EC527",
+            "trace": [
+              "Function.addPermission (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:37:9)",
+              "LambdaIntegration.bind (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:45:26)",
+              "new Method (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/method.js:39:40)",
+              "Resource.addMethod (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:30:16)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:71:15)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/todosApi/Default/todos/PUT/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "todosApitodosPUT794C7915",
+            "trace": [
+              "new Method (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/method.js:55:26)",
+              "Resource.addMethod (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:30:16)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/senem/Desktop/dogu/aws/project/index.js:71:15)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:107:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:22:30)",
+              "construct (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/private/synthesis.js:127:9)",
+              "visit (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/private/synthesis.js:181:9)",
+              "visit (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/private/synthesis.js:178:9)",
+              "injectMetadataResources (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/private/synthesis.js:116:5)",
+              "Object.synthesize (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/private/synthesis.js:16:5)",
+              "App.synth (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/stage.js:90:41)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:108:5)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:30:35)",
+              "construct (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/private/synthesis.js:127:9)",
+              "visit (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/private/synthesis.js:181:9)",
+              "visit (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/private/synthesis.js:178:9)",
+              "injectMetadataResources (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/private/synthesis.js:116:5)",
+              "Object.synthesize (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/private/synthesis.js:16:5)",
+              "App.synth (/Users/senem/Desktop/dogu/aws/project/node_modules/@aws-cdk/core/lib/stage.js:90:41)",
+              "Object.<anonymous> (/Users/senem/Desktop/dogu/aws/project/index.js:108:5)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
